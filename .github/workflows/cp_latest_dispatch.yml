@@ -307,7 +307,7 @@ jobs:
 
   download-fiddler-everywhere-mac:
     if: ${{ github.event.inputs.os-and-arch == 'Mac (x86_64)' || github.event.inputs.os-and-arch == 'Mac (arm64)' || github.event.inputs.os-and-arch == 'Mac (arm64e)' }}
-    runs-on: mac-latest
+    runs-on: self-hosted
     needs: 
       - scrape_fe_version
 
