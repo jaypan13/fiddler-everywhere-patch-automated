@@ -332,7 +332,7 @@ jobs:
               #Don't know
               $downloadUrl = "https://downloads.getfiddler.com/mac-arm64/Fiddler%20Everywhere%20$scrapedVersion.dmg"
             } else {
-              throw "Unsupported OS architecture: $env:ARCH_CODE"
+              $downloadUrl = "https://downloads.getfiddler.com/mac-arm64/Fiddler%20Everywhere%20$scrapedVersion.dmg"
             }
           
             Write-Host "Download URL: $downloadUrl"
